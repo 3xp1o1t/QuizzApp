@@ -1,7 +1,8 @@
 import { CreateQuizParams, SearchQuizParams, SolveQuizParams } from '@/types';
 import { getErrorMessage } from '@/util';
 
-const BASE_URL = 'http://localhost:3000/api';
+// const BASE_URL = 'http://localhost:3000/api';
+const BASE_URL = 'https://quizz-app-sandy.vercel.app/api';
 
 export const getAllQuizzes = async () => {
   try {
