@@ -20,7 +20,7 @@ const Navbar = () => {
           {path === '/' && (
             <span className="w-1 h-4 bg-secondary rounded inline-block animate-slideDown"></span>
           )}
-          Home
+          Inicio
         </Link>
 
         <Link
@@ -30,7 +30,7 @@ const Navbar = () => {
           {path === '/create' && (
             <span className="w-1 h-4 bg-secondary rounded inline-block animate-slideDown"></span>
           )}
-          Create a quiz
+          Crear encuesta
         </Link>
       </nav>
     </div>

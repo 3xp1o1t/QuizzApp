@@ -1,9 +1,9 @@
 import { CreateQuizParams, SearchQuizParams, SolveQuizParams } from '@/types';
 import { getErrorMessage } from '@/util';
 
-const BASE_URL = process.env.BASE_URL;
+const BASE_URL = 'http://localhost:3000/api';
 
-export const getAllQuizzes: object = async () => {
+export const getAllQuizzes = async () => {
   try {
     const response = await fetch(`${BASE_URL}/quiz`);
     if (!response.ok) {
@@ -20,7 +20,7 @@ export const getAllQuizzes: object = async () => {
   }
 };
 
-export const getSingleQuiz: object = async (quizId: string) => {
+export const getSingleQuiz = async (quizId: string) => {
   try {
     const response = await fetch(`${BASE_URL}/quiz/${quizId}`);
     if (!response.ok) {
